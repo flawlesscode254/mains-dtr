@@ -1,14 +1,6 @@
 {
-  "builds": [
-    {
-      "src": "packages/core/dist/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/packages/core/dist/$1"
-    }
-  ]
+    "outputDirectory": "packages/core/dist",
+    "buildCommand": "npm run build:all",
+    "routes": [{ "handle": "filesystem" }, { "src": "/(.*)", "dest": "/index.html" }],
+    "installCommand": "npm install"
 }
