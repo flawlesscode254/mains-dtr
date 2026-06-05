@@ -6,7 +6,7 @@ It will cover:
 
 -   Brief explanation on the test framework used in the project.(**Jest**)
 
--   `react-testing-library` configuration.
+-   `react-testing-library` configuration
 
 -   Examples
 
